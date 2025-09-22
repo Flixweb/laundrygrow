@@ -23,6 +23,170 @@ body{font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Ne
 50%{background-position:100% 50%}
 100%{background-position:0 50%}
 }
+.why-choose-card {
+   background: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(20px) saturate(180%);
+   -webkit-backdrop-filter: blur(20px) saturate(180%);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   border-radius: 20px;
+   padding: 30px 20px;
+   text-align: center;
+   margin: 15px 0;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+   }
+   .why-choose-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+   }
+   .why-choose-card .icon {
+   font-size: 2.5rem;
+   margin-bottom: 15px;
+   color: #8a4fff; /* iOS purple accent */
+   }
+   .why-choose-card h4 {
+   font-size: 1.3rem;
+   margin-bottom: 10px;
+   color: #2d1b4e;
+   }
+   .why-choose-card p {
+   font-size: 0.95rem;
+   color: #4a2e6e;
+   }
+   .featers-list-h2{
+   background: #fff;
+   width: fit-content;
+   padding: 5px 14px 5px 14px;
+   border-radius: 30px;
+   font-size: 17px;
+   text-align: center;
+   display: block;
+   margin: 0 auto; 
+   }
+      @media (min-width: 1400px) {
+      .container,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+      max-width: 1430px;
+      }
+      }
+
+.trial-icon-ft1 svg {
+    background-image: linear-gradient(135deg, #ffb6f9 0%, #ff3ebf 100%);
+    padding: 7px 5px;
+    border-radius: 21px;
+    color: #fff;
+}
+
+.trial-icon-ft2 svg {
+    background-image: linear-gradient(135deg, #ffb199 0%, #ff0844 100%);
+    padding: 7px 5px;
+    border-radius: 21px;
+    color: #fff;
+}
+
+.trial-icon-ft3 svg {
+    background-image: linear-gradient(135deg, #d2b48c 0%, #8b4513 100%);
+    padding: 7px 5px;
+    border-radius: 21px;
+    color: #fff;
+}
+
+.trial-icon-ft4 svg {
+    background-image: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    padding: 7px 5px;
+    border-radius: 21px;
+    color: #fff;
+}
+.trial-icon-ft4 h4, .trial-icon-ft3 h4, .trial-icon-ft2 h4, .trial-icon-ft1 h4 {
+    position: relative;bottom: 7px;
+}
+
+.feature-card {
+    position: relative;
+    background: #fff;
+    border-radius: 18px;
+    padding: 28px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    min-height: 260px;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(18,26,40,0.12), 0 6px 12px rgba(18,26,40,0.06);
+}
+
+.feature-card::before {
+  content: "";
+  position: absolute;
+  inset: auto -20% auto auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.65), rgba(255,255,255,0.05) 40%, rgba(255,255,255,0) 60%);
+  transform: translate(0, -20px) scale(.9);
+  filter: blur(20px);
+  pointer-events: none;
+  opacity: 0.65;
+  transition: transform .55s cubic-bezier(.2,.9,.3,1), opacity .35s ease;
+  mix-blend-mode: overlay;
+}
+.feature-card:hover::before {
+  transform: translate(-10px, -30px) scale(1);
+  opacity: .9;
+}
+
+.feature-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-size: 28px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.35));
+  box-shadow: 0 6px 18px rgba(18,26,40,0.06);
+  border: 1px solid rgba(255,255,255,0.55);
+}
+
+.featers-list-h2 a {
+  color: #0b2540;            /* dark but soft */
+  display: inline-block;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.feature-card:hover .featers-list-h2 a {
+  color: #092033;
+}
+
+/* subtitle / paragraph */
+.muted-small {
+  color: rgba(11, 20, 34, 0.78);
+  line-height: 1.45;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* small screens tweak */
+@media (max-width: 575.98px) {
+  .feature-card {
+    padding: 20px 14px;
+    min-height: 220px;
+    border-radius: 14px;
+  }
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 24px;
+    border-radius: 12px;
+  }
+}
 @keyframes starsFloat {
 0%{transform:translateY(0)}
 100%{transform:translateY(-40px)}
