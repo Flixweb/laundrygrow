@@ -431,4 +431,5 @@ input:checked + .slider:before{transform:translateX(30px)}
 .how-it-works-step{flex-direction:column}
 .step-number{margin-right:0;margin-bottom:1rem}
 .top-hero-img img{width:100%}
+.hero-title{font-size: 20px; margin-top: 54px;}
 }
