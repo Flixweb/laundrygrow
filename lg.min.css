@@ -18,6 +18,8 @@ body{font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Ne
 .btn-signup:hover{background:#6B3AC7}
 .btn-primary::before,.btn-primary::after{content:"";position:absolute;top:0;left:0;width:2px;height:2px;border-radius:50%;background:#ffffffe6;box-shadow:20px 10px #fffc 60px 30px #fff9 100px 20px #ffffffe6 140px 40px #ffffffb3 180px 25px #fffc 220px 15px #fff9;animation:starsFloat 12s linear infinite;pointer-events:none;z-index:1}
 .btn-primary::after{animation-delay:6s;opacity:.7}
+.top-featers{list-style-type: none;text-align: left;}
+.top-featers li{margin-top: 5px;}
 @keyframes gradientMove {
 0%{background-position:0 50%}
 50%{background-position:100% 50%}
@@ -338,6 +340,11 @@ body{font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Ne
 .social-icon{font-size:1.3rem;margin-right:1rem;color:#e0d6ff;transition:all .3s ease}
 .social-icon:hover{color:#fff;transform:translateY(-3px)}
 .logo{width:142px;transition:all .3s ease}
+@media (max-width: 767px) {.logo{width: 106px;}
+.hero-title{font-size: 20px !important; margin-top: 31px !important;}
+.top-hero-img img{width:65%}
+.nav-logbtn{margin-left: 0px !important;}
+}
 .logo:hover{transform:scale(1.05)}
 .dash-img-round{border-top-left-radius:16px;border-top-right-radius:16px;transition:all .4s ease}
 .dash-img-round:hover{transform:translateY(-5px) scale(1.02)}
@@ -430,6 +437,5 @@ input:checked + .slider:before{transform:translateX(30px)}
 .graphic-item{width:100%}
 .how-it-works-step{flex-direction:column}
 .step-number{margin-right:0;margin-bottom:1rem}
-.top-hero-img img{width:100%}
-.hero-title{font-size: 20px !important; margin-top: 54px !important;}
+
 }
